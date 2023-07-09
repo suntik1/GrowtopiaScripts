@@ -24,9 +24,9 @@ function GonWebhook(Shinuqi)
 end
 
 function join(a,b) 
-    sleep(3000)
+    sleep(5000)
     bot:sendPacket(3,"action|join_request\nname|"..a.."|"..b.."\ninvitedWorld|0")
-    sleep(3000)
+    sleep(5000)
     AnlikYer()
     Dunyadami = tostring(world.name)
     if Dunyadami ~= "" and Dunyadami ~= "EXIT" then
@@ -92,7 +92,7 @@ function TrashTheJunks()
 end
 
 join(storage,storageid)
-sleep(5000)
+sleep(8000)
 tarama()
 while itemler == 0 do
     GonWebhook("Block Scanning...")
